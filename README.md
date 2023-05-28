@@ -7,13 +7,13 @@
 ### Instructions
 
 
-Build the image
+**Build the image**  
 `docker build  -t data-science-base .`
 
-Run the container using following command:
+**Run the container using following command**  
 `docker run --publish {host_port}:8889 --volume {path_to_local_dir}:/app/notebooks --rm data-science-base`
 
-where:
+
 - `host_port` - port on host machine where jupyter lab should be accessible
 - `path_to_local_dir` - host directory path where notebooks will be saved
 
